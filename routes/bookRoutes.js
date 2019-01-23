@@ -52,7 +52,7 @@ router.delete('/:id', (req, res) => {
     .delete()
     .returning('*')
     .then(deletedBook =>{
-      res.json({beer:deletedBook[0]})
+      res.json({book:deletedBook[0]})
     })
 })
 
